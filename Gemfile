@@ -33,7 +33,7 @@ gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
 gem 'devise'
 gem 'rails_admin'
-
+gem 'web-console', '>= 3.3.0'
 
 
 # Use Capistrano for deployment
@@ -56,7 +56,7 @@ end
 
 group :production do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
+
   gem 'pg'
   gem 'rails_12factor'
 end
