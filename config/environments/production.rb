@@ -1,6 +1,14 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+
+  # Enable rails console on production server
+  config.web_console.development_only = false
+
+
+
+
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
