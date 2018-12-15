@@ -33,7 +33,7 @@ gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
 gem 'devise'
 gem 'rails_admin'
-gem 'web-console', '>= 3.3.0'
+
 
 
 # Use Capistrano for deployment
@@ -45,7 +45,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-
+  gem 'web-console', '>= 3.3.0'
   gem 'sqlite3'
 end
 

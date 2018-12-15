@@ -38,8 +38,13 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
-  
+
   config.authorize_with do
-   redirect_to main_app.root_path unless warden.user.is_admin?
+    
+    if(warden.user != nil)
+      redirect_to main_app.root_path unless warden.user.admin == true
+    else
+      redirect_to main_app.root_path
+    end
   end
 end
