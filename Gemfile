@@ -39,13 +39,18 @@ gem 'rails_admin'
 # Use Capistrano for deployment
 # gem
 
+group :development do
+gem 'web-console', '>= 3.3.0'
+end
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  gem 'web-console', '>= 3.3.0'
+
   gem 'sqlite3'
 end
 
