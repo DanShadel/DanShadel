@@ -3,11 +3,6 @@ Rails.application.configure do
 
 
   # Enable rails console on production server
-  config.web_console.development_only = false
-
-
-
-
 
   # Code is not reloaded between requests.
   config.cache_classes = true
