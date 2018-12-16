@@ -13,4 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
 @import "bootstrap";
+
+h1 {
+	color: #888888;
+	font-size: 48px;
+}
+
+.btn-outline-secondary{
+	min-width: 128px;
+	margin-left: 4px;
+	margin-right: 4px;
+	color: #888888;
+	border: none;
+}

@@ -9,7 +9,34 @@
     <%= favicon_link_tag asset_path('favicon.png'), :rel => 'icon', :type =>  'image/png' %>
   </head>
 
+  <div class="site-bg">
+
+
+    <!-- header start -->
+    <div class="header-container">
+
+      <!-- name -->
+      <div class="row justify-content-center">
+        <h1> Dan Shadel </h1> 
+      </div><!-- close row -->
+
+      <!-- tabs -->
+      <div class="row justify-content-center">
+
+          <%= link_to 'Projects', projects_path, class: "btn btn-outline-secondary" %>
+          <%= link_to 'About me', pages_about_path, class: "btn btn-outline-secondary" %>
+          <%= link_to 'Contact me', pages_contact_path, class: "btn btn-outline-secondary" %>
+      </div>
+    </div>
+
+    <!-- header end -->
+
+
+
   <body>
     <%= yield %>
   </body>
 </html>
+
+
+</div>
